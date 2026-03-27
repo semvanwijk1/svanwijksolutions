@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
       const [headerRes, footerRes] = await Promise.all([
-        fetch('/components/header.html'),
-        fetch('/components/footer.html')
+        fetch('components/header.html'),
+        fetch('components/footer.html')
       ]);
 
       if (!headerRes.ok || !footerRes.ok) throw new Error('Component niet gevonden');
